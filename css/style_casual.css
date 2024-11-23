@@ -223,7 +223,7 @@ body {
 
     margin-bottom: 64px;
 
-    background-image: url('/images/header/banner-bg.webp');
+    background-image: url('images/header/banner-bg.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
