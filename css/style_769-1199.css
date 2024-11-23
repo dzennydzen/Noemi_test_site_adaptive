@@ -1,0 +1,112 @@
+/*ШАПКА*/
+
+
+.header_menu {
+    display: none;
+}
+
+.burger_menu {
+    position: absolute;
+    z-index: 3; 
+
+    right: 35px;
+}
+
+.burger_toggle {
+    display: none;
+}
+
+.burger_menu::after {
+    content: '';
+    background-image: url('/images/decorative/iconizer-icons8.svg');
+    background-repeat: no-repeat;
+
+    width: 25px;
+    height: 21px;
+
+    position: absolute;
+    top: -10px;
+    bottom: 0;
+    right: 0px;
+    z-index: 3; 
+}
+
+.header_logo {
+    margin-left: 30px;
+}
+
+/*ТРЕНДЫ*/
+
+.trend_posts {
+    flex-wrap: wrap; 
+}
+
+.trend_post {
+    margin-bottom: 4px;
+
+    max-width: 49%;
+}
+
+.trend_post_image::after {
+    content: '';
+    background-color: rgba(0,0,0,0.5);
+
+    position: absolute;
+    top: 0;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+}
+
+/*ГЛАВНЫЙ КОНТЕНТ*/
+
+.post {
+    flex-wrap: wrap;
+
+    margin-left: 0;
+}
+
+.post_content {
+    margin-left: 0;
+
+    max-width: 390px;
+}
+
+/*.posts_content {
+    margin-left: 30px;
+    margin-right: 10%;
+}*/
+
+.main_content {
+    margin: 64px auto;
+
+    justify-content: center;
+}
+
+/*БОКОВАЯ ПАНЕЛЬ*/
+
+.aside_panel {
+    margin-left: 0;
+}
+
+/*НАШИ ИЗДЕЛИЯ*/
+
+.shop_items {
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.shop_item_card {
+    min-width: 50%;
+}
+
+.shop_item_card:nth-child(3) {
+    margin-top: 20px;
+}
+
+/*ФУТЕР*/
+
+.footer {
+    width: calc(100% - 35px - 35px);
+}

@@ -1,0 +1,192 @@
+/*СКРЫТИЕ ЭЛЕМЕНТОВ*/
+
+
+
+
+
+/*ШАПКА*/
+
+.header {
+    background-image: url('/images/header/banner-mobile.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    min-height: 639px;
+}
+
+.header_title {
+    font-size: 26px;
+    
+    min-width: 300px;
+}
+
+.header_logo {
+    width: 269px;
+    height: 61px;
+
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-200%);
+
+    margin-bottom: 25px;
+}
+
+
+/*ТРЕНДЫ*/
+
+.trend_post {
+    width: 100%;
+
+    margin-bottom: 4px;
+}
+
+.trend_posts {
+    flex-wrap: wrap;
+}
+
+.trend_post:nth-child(1), .trend_post:nth-child(2) {
+    margin-bottom: 4px;
+}
+
+.trend_post:nth-child(1), .trend_post:nth-child(3) {
+    margin-right: 0;
+}
+
+
+/*ГЛАВНЫЙ КОНТЕНТ*/
+
+.main_content {
+    min-width: 331px;
+
+    flex-wrap: wrap;
+}
+
+
+.post_content {
+    padding-right: 0;
+
+    max-width: 100%;
+}
+
+.date_and_author {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*БОКОВАЯ ПАНЕЛЬ*/
+
+.aside_panel {
+    margin: 0;
+}
+
+/*БЛОК ТОВАРЫ*/
+
+.shop_items {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.shop_item_card:nth-child(2) {
+    margin-left: 0;
+}
+
+.shop_block {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.shop_item__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop_item_card:nth-child(2n + 1) {
+    margin-right: 0;
+
+    width: 100%;
+}
+
+.shop_item_card:nth-child(1), .shop_item_card:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.shop_item_card {
+    margin-bottom: 50px;
+
+    max-height: none;
+}
+
+.shop_wrapper > .title {
+    text-align: center;
+
+    position: relative;
+}
+
+.shop_wrapper > .title::before {
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.item_image {
+    object-fit: contain;
+    width: 100%;
+}
+
+.item_description {
+    max-width: 331px;
+}
+
+.item_content {
+    padding: 54px 21px 26px 21px;
+}
+
+/*ФУТЕР*/
+
+.footer {
+    width: calc(100% - 13px - 13px);
+
+    margin: 0;
+}
+
+/*.posts_content, .aside_panel {
+    width: 100%;
+}
+
+.main_content {
+    flex-wrap: wrap;
+
+    padding: 0;
+}
+
+.post_image {
+    width: 100%;
+    object-fit: fill;
+}
+
+.post {
+    width: calc(100% - 30px);
+
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.posts_content {
+    margin: 0;
+}
+
+.post_content {
+     display: none;
+}
+*/
+

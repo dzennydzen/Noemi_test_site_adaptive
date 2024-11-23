@@ -1,0 +1,873 @@
+@font-face {
+    font-family: OpenSans;
+    src: url('/fonts/OpenSans-Regular.ttf'),
+            url('/fonts/OpenSans-Regular.woff'),
+                url('/fonts/OpenSans-Regular.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: OpenSans_bold;
+    src: url('/fonts/OpenSans-Bold.ttf'),
+            url('/fonts/OpenSans-Bold.woff'),
+                url('/fonts/OpenSans-Bold.woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*РАСПОЛОЖЕНИЕ ЭЛЕМЕНТОВ*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0;
+    min-width: 1288px;
+
+    position: relative;
+}
+
+/*ШАПКА - фон и лого*/
+
+.header {
+    width: 100%;
+    /*min-height: 485px;*/
+
+    margin-bottom: 64px;
+
+    background-image: url('/images/header/banner-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    z-index: 1;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.header_title {
+    text-transform: uppercase;
+    font-family: OpenSans_bold;
+    font-size: 45px;
+    color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+
+    text-align: center;   
+    max-width: 680px; /*42.5rem;*/
+
+    z-index: 3;  
+}
+
+/*ВЫРАВНИВАНИЕ ВЕРХНЕГО КОНТЕНТА В ШАПКЕ*/
+
+.header_top_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 27px;
+}
+/*ЛОГО*/
+
+.header_logo {
+    position: relative;
+    z-index: 3;
+
+    margin-left: 248px;
+
+    width: 182px;
+    height: 40px;
+}
+
+/*МЕНЮ*/
+
+.menu_items {
+    list-style-type: none;
+    padding-left: 0;
+    margin-right: 245px;
+
+    font-family: OpenSans;
+    font-size: 12.8px;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    z-index: 3;
+
+    box-sizing: border-box;
+}
+
+/*СТИЛИ ПУНКТОВ МЕНЮ*/
+
+.menu_item {
+    padding-right: 35px;
+}
+
+.menu_item:last-child {
+    padding-right: 0;
+}
+
+.menu_item_hyper {
+    text-decoration: none;
+    color: white;
+}
+
+.menu_item_hyper:hover {
+    color: #b59f5b;
+    text-decoration: underline;
+}
+
+
+/*РАСПОЛОЖЕНИЕ ГЛАВНОГО КОНТЕНТА*/
+
+.main_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 64px auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+/*ССЫЛКИ*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*ТРЕНДЫ*/
+.trends {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: 100%;
+}
+
+.trend_posts {
+    display: flex;
+    justify-content: center;
+
+    /*width: 100%;*/
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.trends_title {
+    position: relative;
+}
+
+.trends_title::before {
+        content: '';
+        background-image: url('/images/decorative/Shape 2 copy.png');
+    
+        position: absolute;
+        width: 65px;
+        height: 3px;
+
+        
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        margin-top: 5px;
+}
+
+.trend_image {
+    width: 100%;
+}
+
+.trend_post_title, .title {
+    font-family: OpenSans_bold;
+    text-transform: uppercase;
+    font-size: 20px;
+
+    margin: 0;
+}
+
+.trend_post_title {
+    color: white;
+
+    margin: 0;
+    font-size: 18px;
+}
+
+.trend_post {
+    position: relative;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.trend_post_content {
+    position: absolute;
+    top: 40%;
+}
+
+/*ВУАЛЬ ТРЕНДА*/
+
+.trend_post_image {
+    position: relative;
+
+    max-width: 450px;
+    max-height: 348px;
+}
+
+.trend_post_image::after {
+    content: '';
+    background-color: rgba(0,0,0,0.5);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*КОНТЕНТ ТРЕНДА*/
+
+.trend_post_content {
+    box-sizing: border-box;
+    border: 2px solid #908156;
+
+    position: absolute;
+    bottom: 16px;
+    top: auto;
+    max-height: 100%;
+
+    margin-left: 24px;
+    margin-right: 24px;
+    padding: 39px 35px 33px 35px;
+}
+
+
+/*ПОСТЫ*/
+
+.post {
+    max-width: 782px;
+    margin-bottom: 59px;
+
+    display: flex;
+    position: relative;
+
+    align-items: start;
+}
+
+.posts_content {
+    margin-right: 114px;
+}
+
+.post_content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+    margin-left: 30px;
+    padding-right: 13px;
+
+    position: relative;
+}
+
+.post_image {
+    object-fit: contain;
+    width: 381px;
+    height: 297px;
+}
+
+.categories {
+    order: 1;
+    margin-bottom: 11px;
+
+    font-family: OpenSans_Bold;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    color: #b59f5b;
+}
+
+.categorie {
+    margin-right: 20px;
+}
+
+.post_title {
+    order: 2;
+    margin: 0;
+
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: OpenSans_Bold;
+}
+
+.date_and_author {
+    order: 3;
+    margin-top: 34px;
+    margin-bottom: 30px;
+
+    display: flex;
+}
+
+.date, .aside_date {
+    color: #888888;
+    margin-right: 15px;
+    display: inline-block;
+
+    font-family: OpenSans;
+    font-size: 12px;
+}
+
+.author {
+    display: inline-block;
+    max-width: 166px;
+
+    font-family: OpenSans_Bold;
+    font-size: 12px;
+}
+
+.text_content {
+    order: 4;
+
+    font-family: OpenSans;
+    font-size: 15px;
+}
+
+
+/*БОКОВАЯ ПАНЕЛЬ*/
+
+.aside_panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+
+    width: 272px;
+    box-sizing: border-box;
+    margin-left: 120px;
+}
+
+/*ОТКЛЮЧЕНИЕ МАРДЖИНОВ И ПЭДДИНГОВ У ПАРАГРАФОВ*/
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/*ПАНЕЛЬ ПОСТОВ*/
+
+.news_posts {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: stretch;
+}
+
+/*ПСЕВДОЭЛЕМЕНТ ПОДЧЕРКИВАНИЕ*/
+
+.aside_title {
+    position: relative;
+
+    padding-bottom: 23px;
+    text-transform: uppercase;
+    font-family: OpenSans_Bold;
+    font-size: 14px;
+
+    text-align: center;
+
+    margin: 0;
+}
+
+
+.aside_title1::before {
+    content: '';
+    background-image: url('/images/decorative/Shape 2 copy.png');
+
+    position: absolute;
+    width: 65px;
+    height: 3px;
+
+    top: 30px;
+    transform: translateX(30%);
+}
+
+.aside_title2::before {
+    content: '';
+    background-image: url('/images/decorative/Shape 2 copy.png');
+
+    position: absolute;
+    width: 65px;
+    height: 3px;
+
+    top: 30px;
+    transform: translateX(10%);
+}
+
+.aside_title3::before {
+    content: '';
+    background-image: url('/images/decorative/Shape 2 copy.png');
+
+    position: absolute;
+    width: 65px;
+    height: 3px;
+
+    top: 30px;
+    transform: translateX(-20%);
+}
+
+.aside_title4::before {
+    content: '';
+    background-image: url('/images/decorative/Shape 2 copy.png');
+
+    position: absolute;
+    width: 65px;
+    height: 3px;
+
+    top: 30px;
+    transform: translateX(-18%);
+}
+
+
+/*ПОСТЫ*/
+
+/*КАРТИНКА ПОСТА*/
+
+.news_post_image {
+    width: 70px;
+    height: 75px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+/*ЗАГОЛОВКИ*/
+
+.news_post_title {
+    text-transform: uppercase;
+    font-family: OpenSans_Bold;
+    font-size: 14px;
+
+    margin: 0;
+    padding: 0;
+}
+
+/*КОНТЕНТ ВНУТРИ ПОСТА*/
+
+.aside_post {
+    width: 272px;
+
+    display: flex;
+    justify-content: left;
+
+    margin-top: 22px;
+
+    box-sizing: border-box;
+}
+
+.aside_post_content {
+    padding-left: 19px;
+}
+
+.aside_date {
+    margin-top: 0;
+}
+
+/*СКРЫТЬ ЛЕЙБЛЫ*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  } 
+
+/*ПОЛЕ ДЛЯ ПОИСКА*/  
+
+input {
+    font-family: OpenSans;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+
+.search_button {
+    background-image: url('/images/buttons/Rectangle 8 copy 20.png');
+
+    width: 49px;
+    height: 49px;
+    border: none;
+
+    position: relative;
+}
+
+.search_button::before {
+    content: '';
+    background-image: url('/images/buttons/search.svg');
+    background-repeat: no-repeat;
+
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    transform: translate(-40%, -40%);
+}
+
+.search_input {
+    border-radius: 0;
+    border: none;
+
+    background-color: #f4f7f6;
+
+    width: 223px;
+    height: 49px;
+    padding-left: 19px;
+    
+    outline: none;
+    box-sizing: border-box;
+}
+
+/*БЛОК ПОДПИСКИ*/
+
+.email_block {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.email_input {
+    display: block;
+
+    width: 272px;
+    height: 48px;
+    border-radius: 0;
+
+    border: none;
+    background-color: #f4f7f6;
+
+    padding-left: 19px;
+    margin-top: 23px;
+
+    box-sizing: border-box;
+
+    outline: none;
+}
+
+.email_input:focus, .search_input:focus {
+    border: 1px solid lightslategray;
+}
+
+.email_button {
+    display: block;
+
+    background-color: #b59f5b;
+    color: white;
+
+    font-family: OpenSans_bold;
+    text-transform: uppercase;
+
+    width: 100%;
+    height: 48px;
+    border: none;
+    margin-top: 17px;
+    margin-bottom: 61px;
+
+    align-self: center;
+    justify-self: center;
+}
+
+/*ТЕГИ*/
+
+.tags_block {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.tag {
+    border: 3px solid #eeeeee;
+    padding: 7px 13px;
+    margin-right: 5px;
+    margin-bottom: 6px;
+
+    font-family: OpenSans_bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.tag:hover {
+    background-color: #c2bca7;
+}
+
+.tags_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+    align-items: center;
+ 
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+
+/*БЛОК ТЕМЫ*/
+
+.themes_block {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.theme_list {
+    font-family: OpenSans_bold;
+
+    list-style-type: none;
+    padding-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.theme {
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+sup {
+    color: #b59f5b;
+}
+
+/*НАШИ ИЗДЕЛИЯ*/
+
+.shop_wrapper {
+  /*min-width: 1288px; - ДЛЯ РАСТЯЖЕНИЯ БЛОКА МАГАЗИНА НА ШИРИНУ ГЛАВНОГО КОНТЕНТА*/
+    width: 100%;
+}
+
+.shop_items {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 47px;
+}
+
+.shop_wrapper > .title {
+    text-align: center;
+
+    position: relative;
+}
+
+.shop_wrapper > .title::before {
+    content: '';
+    background-image: url('/images/decorative/Shape 2 copy.png');
+
+    position: absolute;
+    width: 65px;
+    height: 3px;
+
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*КАРТОЧКИ*/
+
+.shop_item_card:nth-child(1), .shop_item_card:nth-child(2) {
+    margin-right: 66px;
+}
+
+.shop_item_card {
+    box-sizing: border-box;
+
+    max-width: 348px;
+    height: 441px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    position: relative;
+}
+
+.shop_item_image {
+    z-index: 1;
+}
+
+.item_description {
+    max-width: 300px;  
+
+    box-sizing: border-box;
+}
+
+.item_content {
+    border: 3px solid #d3c59d;
+    box-sizing: border-box;
+
+    width: 348px;
+    height: 266px;
+
+    padding: 54px 21px 69px 21px;
+    
+    position: relative;
+    top: -30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*ЦЕНЫ*/
+
+.item_cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    min-width: 300px;
+    margin-top: 22px;
+}
+
+.price_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    font-family: OpenSans_bold;
+}
+
+.former_price {
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.actual_price {
+    font-size: 20px;
+}
+
+/*КНОПКА*/
+
+.shop_button {
+    background-image: url('/images/buttons/Rectangle 8 copy 20.png');
+
+    width: 140px;
+    height: 48px;
+
+    border: 1px solid transparent;
+
+    font-family: OpenSans_bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/*ФУТЕР*/
+
+.footer {
+    background-color: #f4f7f6;
+
+    /*margin: 66px 245px 0 245px;*/
+    align-self: center;  
+    padding: 32px 0 32px 0;
+
+    /*min-width: calc(100% - 90px - 90px);*/
+    min-width: 1260px;
+    max-height: 83px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_logo:nth-child(1), .contact_logo:nth-child(2), .contact_logo:nth-child(3), .contact_logo:nth-child(4) {
+    margin-right: 28px;
+}
+
+.contact {
+    width: 25px;
+    height: 21px; 
+}
+
+.copyright {
+   margin: 74px auto 41px auto;
+}
+
+.copyright_text {
+    font-family: OpenSans_bold;
+    font-size: 12px;
+
+    color: #999999;
+}
+
+/*.footer {
+    max-width: 100%;
+    height: 85px;
+    margin-left: 245px;
+    margin-right: 245px;
+    margin-top: 65px;
+    margin-bottom: 74px;
+
+    background-color: #f4f7f6;
+
+    justify-self: center;
+
+    position: relative;
+}
+
+.hypers {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.hyper {
+    margin-right: 30px;
+}*/

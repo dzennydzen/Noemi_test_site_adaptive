@@ -1,0 +1,188 @@
+/*ШАПКА*/
+
+.header {
+    background-image: url('/images/header/banner-bg-tablet.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    z-index: 1;
+}
+
+.header_title {
+    font-size: 200%;
+    
+    min-width: 605px;
+}
+
+.header_logo {
+    margin-left: 35px;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0,0,0,0.6);
+    z-index: 2;
+}
+
+/*МЕНЮ*/
+
+.header_menu {
+   display: none; 
+}
+
+/*БУРГЕР-МЕНЮ*/
+
+.burger_menu {
+    position: absolute;
+    z-index: 3; 
+
+    right: 35px;
+}
+
+.burger_toggle {
+    display: none;
+}
+
+.burger_menu::after {
+    content: '';
+    background-image: url('/images/decorative/iconizer-icons8.svg');
+    background-repeat: no-repeat;
+
+    width: 25px;
+    height: 21px;
+
+    position: absolute;
+    top: 0;
+    right: -15px;
+    z-index: 3; 
+}
+
+
+/*ТРЕНДЫ*/
+
+.trends_title::before {
+    content: '';
+    background-image: url('/images/decorative/Shape 2 copy.png');
+
+    position: absolute;
+    width: 65px;
+    height: 3px;
+
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin-top: 0;
+}
+
+.trend_posts {
+    flex-wrap: wrap;
+}
+
+.trend_post {
+    width: 49.6%;
+    margin: 0;
+}
+
+.trend_post:nth-child(1), .trend_post:nth-child(2) {
+    margin-bottom: 2px;
+}
+
+.trend_post:nth-child(1), .trend_post:nth-child(3) {
+    margin-right: 4px;
+}
+
+.trend_post_title, .post_title, .title {
+    font-size: 17px;
+}
+
+/*ГЛАВНЫЙ КОНТЕНТ*/
+
+.main_content {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.date_and_author {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*ПОСТЫ*/
+
+.post {
+    flex-wrap: wrap;
+
+    max-width: 390px;
+}
+
+.post_content {
+    margin-left: 0;
+    margin-top: 18px;
+}
+
+.posts_content {
+    margin-right: 0;
+}
+
+/*БОКОВАЯ ПАНЕЛЬ*/
+
+.aside_panel {
+    margin-left: 35px;
+}
+
+/*КНОПКА ПОИСКА*/
+
+
+
+/*БЛОК ТОВАРОВ*/
+
+.shop_items {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.shop_item_card:nth-child(1), .shop_item_card:nth-child(2) {
+    margin-bottom: 50px;
+}
+
+.shop_item_card:nth-child(2) {
+    margin-left: 24px;
+}
+
+.shop_block {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.shop_wrapper > .title::before {
+    content: '';
+    background-image: url('/images/decorative/Shape 2 copy.png');
+
+    position: absolute;
+    width: 65px;
+    height: 3px;
+
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*ФУТЕР*/
+
+.footer {
+    width: calc(100% - 35px - 35px)
+}
+
+
+

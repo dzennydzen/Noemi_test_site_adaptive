@@ -1,0 +1,88 @@
+/*ШАПКА*/
+
+.header_title {
+    min-width: 350px;
+    
+
+    position: absolute;
+    top: 55%;
+}
+
+.header_logo {
+        width: 100%;
+        object-fit: contain;
+        height: 70px;
+    
+        position: absolute;
+        top: 24%;
+        right: 0;      
+}
+
+/*ТРЕНДЫ*/
+
+.trend_posts {
+    margin-top: 40px;
+}
+
+.trend_post {
+    width: 100%;
+
+    margin-bottom: 4px;
+}
+
+.trend_post_image {
+    max-width: 100%;
+}
+
+.trend_post_content {
+    width: calc(100% - 24px - 24px);
+}
+
+.trend_post:nth-child(1), .trend_post:nth-child(3) {
+    margin-right: 0;
+    margin-bottom: 4px;
+}
+
+.trend_post:nth-child(1), .trend_post:nth-child(2) {
+    margin-right: 0;
+    margin-bottom: 4px;
+}
+
+.trend_post_image::after {
+    content: '';
+    background-color: rgba(0,0,0,0.5);
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*ГЛАВНЫЙ КОНТЕНТ*/
+
+.main_content {
+    flex-wrap: wrap;
+
+  
+}
+
+.post_content {
+    text-align: center;
+}
+
+.post_title {
+    font-size: 22px;
+}
+
+/*БОКОВАЯ ПАНЕЛЬ*/
+
+.aside_panel {
+    margin-left: 1%;
+}
+
+/*КАРТОЧКИ*/
+
+.shop_item_card:nth-child(2) {
+    margin-left: 0;
+}
