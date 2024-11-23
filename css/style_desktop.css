@@ -1,17 +1,17 @@
 @font-face {
     font-family: OpenSans;
-    src: url('/fonts/OpenSans-Regular.ttf'),
-            url('/fonts/OpenSans-Regular.woff'),
-                url('/fonts/OpenSans-Regular.woff2');
+    src: url('fonts/OpenSans-Regular.ttf'),
+            url('fonts/OpenSans-Regular.woff'),
+                url('fonts/OpenSans-Regular.woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: OpenSans_bold;
-    src: url('/fonts/OpenSans-Bold.ttf'),
-            url('/fonts/OpenSans-Bold.woff'),
-                url('/fonts/OpenSans-Bold.woff2');
+    src: url('fonts/OpenSans-Bold.ttf'),
+            url('fonts/OpenSans-Bold.woff'),
+                url('fonts/OpenSans-Bold.woff2');
     font-weight: bold;
     font-style: normal;
 }
@@ -37,7 +37,7 @@ body {
 
     margin-bottom: 64px;
 
-    background-image: url('/images/header/banner-bg.webp');
+    background-image: url('images/header/banner-bg.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -182,7 +182,7 @@ a {
 
 .trends_title::before {
         content: '';
-        background-image: url('/images/decorative/Shape 2 copy.png');
+        background-image: url('images/decorative/Shape 2 copy.png');
     
         position: absolute;
         width: 65px;
@@ -403,7 +403,7 @@ p {
 
 .aside_title1::before {
     content: '';
-    background-image: url('/images/decorative/Shape 2 copy.png');
+    background-image: url('images/decorative/Shape 2 copy.png');
 
     position: absolute;
     width: 65px;
@@ -415,7 +415,7 @@ p {
 
 .aside_title2::before {
     content: '';
-    background-image: url('/images/decorative/Shape 2 copy.png');
+    background-image: url('images/decorative/Shape 2 copy.png');
 
     position: absolute;
     width: 65px;
@@ -427,7 +427,7 @@ p {
 
 .aside_title3::before {
     content: '';
-    background-image: url('/images/decorative/Shape 2 copy.png');
+    background-image: url('images/decorative/Shape 2 copy.png');
 
     position: absolute;
     width: 65px;
@@ -439,7 +439,7 @@ p {
 
 .aside_title4::before {
     content: '';
-    background-image: url('/images/decorative/Shape 2 copy.png');
+    background-image: url('images/decorative/Shape 2 copy.png');
 
     position: absolute;
     width: 65px;
@@ -524,7 +524,7 @@ input {
 
 
 .search_button {
-    background-image: url('/images/buttons/Rectangle 8 copy 20.png');
+    background-image: url('images/buttons/Rectangle 8 copy 20.png');
 
     width: 49px;
     height: 49px;
@@ -703,7 +703,7 @@ sup {
 
 .shop_wrapper > .title::before {
     content: '';
-    background-image: url('/images/decorative/Shape 2 copy.png');
+    background-image: url('images/decorative/Shape 2 copy.png');
 
     position: absolute;
     width: 65px;
@@ -794,7 +794,7 @@ sup {
 /*КНОПКА*/
 
 .shop_button {
-    background-image: url('/images/buttons/Rectangle 8 copy 20.png');
+    background-image: url('images/buttons/Rectangle 8 copy 20.png');
 
     width: 140px;
     height: 48px;
