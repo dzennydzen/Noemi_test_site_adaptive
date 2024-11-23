@@ -1,17 +1,17 @@
 @font-face {
     font-family: OpenSans;
-    src: url('fonts/OpenSans-Regular.ttf'),
-            url('fonts/OpenSans-Regular.woff'),
-                url('fonts/OpenSans-Regular.woff2');
+    src: url('../fonts/OpenSans-Regular.ttf'),
+            url('../fonts/OpenSans-Regular.woff'),
+                url('../fonts/OpenSans-Regular.woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: OpenSans_bold;
-    src: url('fonts/OpenSans-Bold.ttf'),
-            url('fonts/OpenSans-Bold.woff'),
-                url('fonts/OpenSans-Bold.woff2');
+    src: url('../fonts/OpenSans-Bold.ttf'),
+            url('../fonts/OpenSans-Bold.woff'),
+                url('../fonts/OpenSans-Bold.woff2');
     font-weight: bold;
     font-style: normal;
 }
@@ -50,7 +50,7 @@ body {
 
 .modal_title::after {
     content: '';
-    background-image: url('images/decorative/Shape 2 copy.png');
+    background-image: url('../images/decorative/Shape 2 copy.png');
 
     position: absolute;
     width: 65px;
@@ -139,7 +139,7 @@ body {
     font-family: inherit;
 
     background-color: #f3f7f6;
-    background-image: url('images/buttons/form-arrows-small.svg');
+    background-image: url('../images/buttons/form-arrows-small.svg');
     background-repeat: no-repeat;
     background-position: right 15px center;
 
@@ -163,7 +163,7 @@ body {
     content: '';
     display: inline-block;
 
-    background-image: url('images/buttons/form-empty-circle.svg');
+    background-image: url('../images/buttons/form-empty-circle.svg');
     background-size: 20px;
     background-repeat: no-repeat;
     vertical-align: middle;
@@ -175,7 +175,7 @@ body {
 }
 
 .modal_radio_button:checked + .modal_radio_label::before {
-    background-image: url('images/buttons/form-circle.svg');
+    background-image: url('../images/buttons/form-circle.svg');
 }
 
 .modal_radio_button {
@@ -202,7 +202,7 @@ body {
 
 .modal_window::before {
     content: '';
-    background-image: url('images/buttons/form-x.svg');
+    background-image: url('../images/buttons/form-x.svg');
     background-size: 30px;
 
     width: 30px;
@@ -223,7 +223,7 @@ body {
 
     margin-bottom: 64px;
 
-    background-image: url('images/header/banner-bg.webp');
+    background-image: url('../images/header/banner-bg.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -375,7 +375,7 @@ a {
 
 .trends_title::before {
         content: '';
-        background-image: url('images/decorative/Shape 2 copy.png');
+        background-image: url('../images/decorative/Shape 2 copy.png');
     
         position: absolute;
         width: 65px;
@@ -600,7 +600,7 @@ p {
 
 .aside_title1::before {
     content: '';
-    background-image: url('images/decorative/Shape 2 copy.png');
+    background-image: url('../images/decorative/Shape 2 copy.png');
 
     position: absolute;
     width: 65px;
@@ -612,7 +612,7 @@ p {
 
 .aside_title2::before {
     content: '';
-    background-image: url('images/decorative/Shape 2 copy.png');
+    background-image: url('../images/decorative/Shape 2 copy.png');
 
     position: absolute;
     width: 65px;
@@ -624,7 +624,7 @@ p {
 
 .aside_title3::before {
     content: '';
-    background-image: url('images/decorative/Shape 2 copy.png');
+    background-image: url('../images/decorative/Shape 2 copy.png');
 
     position: absolute;
     width: 65px;
@@ -636,7 +636,7 @@ p {
 
 .aside_title4::before {
     content: '';
-    background-image: url('images/decorative/Shape 2 copy.png');
+    background-image: url('../images/decorative/Shape 2 copy.png');
 
     position: absolute;
     width: 65px;
@@ -719,7 +719,7 @@ input {
 }
 
 .search_button {
-    background-image: url('images/buttons/Rectangle 8 copy 20.png');
+    background-image: url('../images/buttons/Rectangle 8 copy 20.png');
 
     width: 49px;
     height: 49px;
@@ -730,7 +730,7 @@ input {
 
 .search_button::before {
     content: '';
-    background-image: url('images/buttons/search.svg');
+    background-image: url('../images/buttons/search.svg');
     background-repeat: no-repeat;
 
     width: 20px;
@@ -923,7 +923,7 @@ sup {
 
 .shop_wrapper > .title::before {
     content: '';
-    background-image: url('images/decorative/Shape 2 copy.png');
+    background-image: url('../images/decorative/Shape 2 copy.png');
 
     position: absolute;
     width: 65px;
@@ -1021,7 +1021,7 @@ sup {
 /*КНОПКА*/
 
 .shop_button {
-    background-image: url('images/buttons/Rectangle 8 copy 20.png');
+    background-image: url('../images/buttons/Rectangle 8 copy 20.png');
 
     width: 140px;
     height: 48px;
