@@ -1,7 +1,7 @@
 /*ШАПКА*/
 
 .header {
-    background-image: url('images/header/banner-bg-tablet.webp');
+    background-image: url('../images/header/banner-bg-tablet.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -53,7 +53,7 @@
 
 .burger_menu::after {
     content: '';
-    background-image: url('images/decorative/iconizer-icons8.svg');
+    background-image: url('../images/decorative/iconizer-icons8.svg');
     background-repeat: no-repeat;
 
     width: 25px;
@@ -70,7 +70,7 @@
 
 .trends_title::before {
     content: '';
-    background-image: url('images/decorative/Shape 2 copy.png');
+    background-image: url('../images/decorative/Shape 2 copy.png');
 
     position: absolute;
     width: 65px;
@@ -167,7 +167,7 @@
 
 .shop_wrapper > .title::before {
     content: '';
-    background-image: url('images/decorative/Shape 2 copy.png');
+    background-image: url('../images/decorative/Shape 2 copy.png');
 
     position: absolute;
     width: 65px;
