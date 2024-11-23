@@ -1,17 +1,17 @@
 @font-face {
     font-family: OpenSans;
-    src: url('/fonts/OpenSans-Regular.ttf'),
-            url('/fonts/OpenSans-Regular.woff'),
-                url('/fonts/OpenSans-Regular.woff2');
+    src: url('fonts/OpenSans-Regular.ttf'),
+            url('fonts/OpenSans-Regular.woff'),
+                url('fonts/OpenSans-Regular.woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: OpenSans_bold;
-    src: url('/fonts/OpenSans-Bold.ttf'),
-            url('/fonts/OpenSans-Bold.woff'),
-                url('/fonts/OpenSans-Bold.woff2');
+    src: url('fonts/OpenSans-Bold.ttf'),
+            url('fonts/OpenSans-Bold.woff'),
+                url('fonts/OpenSans-Bold.woff2');
     font-weight: bold;
     font-style: normal;
 }
